@@ -1,0 +1,51 @@
+{
+	"variables": [],
+	"info": {
+		"name": "MSA",
+		"_postman_id": "129a27b2-b0eb-429e-42d7-92b8aa2d3d50",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET - /Produits/",
+			"request": {
+				"url": "http://localhost:9001/Produits/",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":4,\r\n    \"nom\": \"TV\",\r\n    \"prix\": 2000\r\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST - Refresh",
+			"request": {
+				"url": "http://localhost:9001/actuator/refresh",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":4,\r\n    \"nom\": \"TV\",\r\n    \"prix\": 2000\r\n  }"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
